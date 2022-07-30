@@ -6,7 +6,8 @@ The purpose of this project is using convolutional neural network to detect and 
 ## Set up: 
 This section should contain a brief description of the steps to follow to run the code for this repository.
 Dataset
-
+## Commit information
+Please open [commit log](https://github.com/wtc842017068/Udacity_Object-Detection-in-an-Urban-Environment/commits?author=wtc842017068)
 ### 1. using Exploratory Data Analysis.ipynb File to Exploratory Data 
 Please open file [Exploratory Data Analysis.ipynb](Exploratory%20Data%20Analysis.ipynb)
 ### 2. Edit the  pipeline_new.config to improve the result of training
