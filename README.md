@@ -187,7 +187,6 @@ The augmentations result is Above pictures
 
 As can be seen from the figure, the error has decreased significantly
 
-
 The final result show in image animation.gif
 
 ![animation.gif](animation.gif)
