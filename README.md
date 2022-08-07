@@ -76,6 +76,9 @@ we split data to 3 foled: test,train,val.
 
 Now we notice the data set not enough data in low lights situation.So I used adjust_brightness config to light up or down the images.And some Vehichles or Humans will be occlude by other objects So we add crop_image config.
 
+
+The origin train error and imporve result pictures
+
 For augmentations i set random_crop_image parameters and random adjust_brightness
 ```python
     random_crop_image{
@@ -135,6 +138,56 @@ For augmentations i set random_crop_image parameters and random adjust_brightnes
     </tr>
 </table>
 
-#### The augmentations result is Above pictures 
-The final result show in image animation.gif.
-Please open file [animation.gif](animation.gif)
+The augmentations result is Above pictures 
+
+#### We Use Above augmentations to improve the algorithm's.
+
+<table>
+    <tr>
+        <th>
+        <image src="images/TensorFlowPreTrain_Image.jpeg" >
+        </th>
+        <th>
+        <image src="images/TensorFlowTrain_Image.jpeg" >
+        </th>
+    </tr>
+    <tr>
+        <th><center><div style="color:orange; border-bottom: 1px solid #d9d9d9;
+        display: inline-block;
+        color: #999;
+        padding: 2px;">Not use augmentations parameters result</div>
+        </center></th>
+    <th> <center><div style="color:orange; border-bottom: 1px solid #d9d9d9;
+        display: inline-block;
+        color: #999;
+        padding: 2px;">Use augmentations parameters result</div></center>
+        </th>
+    </tr>
+    <tr>
+        <th>
+        <image src="images/TensorFlowPreTestLoss_Image.jpeg" >
+        </th>
+        <th>
+        <image src="images/TensorFlowTest_Image.jpeg" >
+        </th>
+    </tr>
+    <tr>
+        <th><center><div style="color:orange; border-bottom: 1px solid #d9d9d9;
+        display: inline-block;
+        color: #999;
+        padding: 2px;">Not use augmentations parameters  Test Result</div>
+        </center></th>
+    <th> <center><div style="color:orange; border-bottom: 1px solid #d9d9d9;
+        display: inline-block;
+        color: #999;
+        padding: 2px;">Use augmentations parameters Test Result</div></center>
+        </th>
+    </tr>
+</table>
+
+As can be seen from the figure, the error has decreased significantly
+
+We can find out the error have
+The final result show in image animation.gif
+
+![animation.gif](animation.gif)
